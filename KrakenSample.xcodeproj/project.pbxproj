@@ -3,16 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F90872D726C476B700B2E044 /* KrakenSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90872D626C476B700B2E044 /* KrakenSampleApp.swift */; };
-		F90872D926C476B700B2E044 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90872D826C476B700B2E044 /* ContentView.swift */; };
+		F90872D926C476B700B2E044 /* VehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90872D826C476B700B2E044 /* VehiclesView.swift */; };
 		F90872DB26C476B900B2E044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90872DA26C476B900B2E044 /* Assets.xcassets */; };
 		F90872DE26C476B900B2E044 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90872DD26C476B900B2E044 /* Preview Assets.xcassets */; };
 		F90872E926C476B900B2E044 /* KrakenSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90872E826C476B900B2E044 /* KrakenSampleTests.swift */; };
 		F90872F426C476B900B2E044 /* KrakenSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90872F326C476B900B2E044 /* KrakenSampleUITests.swift */; };
+		F908730326C476F000B2E044 /* KrakenCommon in Frameworks */ = {isa = PBXBuildFile; productRef = F908730226C476F000B2E044 /* KrakenCommon */; };
+		F908730626C4772300B2E044 /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908730526C4772300B2E044 /* VehiclesViewModel.swift */; };
+		F908730926C4778400B2E044 /* VehiclesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908730826C4778400B2E044 /* VehiclesRepository.swift */; };
+		F908730B26C477B500B2E044 /* RepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908730A26C477B500B2E044 /* RepositoryFactory.swift */; };
+		F908730E26C4780B00B2E044 /* KrakenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908730D26C4780B00B2E044 /* KrakenContainer.swift */; };
+		F908731026C4784F00B2E044 /* VehicleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908730F26C4784F00B2E044 /* VehicleList.swift */; };
+		F908731226C4786C00B2E044 /* VehicleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908731126C4786C00B2E044 /* VehicleRow.swift */; };
+		F908731426C4788000B2E044 /* KrakenStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908731326C4788000B2E044 /* KrakenStatus.swift */; };
+		F908731626C4789900B2E044 /* VehicleStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908731526C4789900B2E044 /* VehicleStatusBadge.swift */; };
+		F908731826C478B800B2E044 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908731726C478B800B2E044 /* Spinner.swift */; };
+		F908731C26C4790C00B2E044 /* SampleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908731B26C4790C00B2E044 /* SampleColors.swift */; };
+		F908731E26C4795100B2E044 /* SampleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908731D26C4795100B2E044 /* SampleTheme.swift */; };
+		F908732126C4797400B2E044 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908732026C4797400B2E044 /* Colors.swift */; };
+		F908732326C4798A00B2E044 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908732226C4798A00B2E044 /* Layout.swift */; };
+		F908732526C479A600B2E044 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908732426C479A600B2E044 /* Typography.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +50,7 @@
 /* Begin PBXFileReference section */
 		F90872D326C476B700B2E044 /* KrakenSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrakenSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90872D626C476B700B2E044 /* KrakenSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenSampleApp.swift; sourceTree = "<group>"; };
-		F90872D826C476B700B2E044 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F90872D826C476B700B2E044 /* VehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesView.swift; sourceTree = "<group>"; };
 		F90872DA26C476B900B2E044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F90872DD26C476B900B2E044 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F90872DF26C476B900B2E044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +60,20 @@
 		F90872EF26C476B900B2E044 /* KrakenSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrakenSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90872F326C476B900B2E044 /* KrakenSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenSampleUITests.swift; sourceTree = "<group>"; };
 		F90872F526C476B900B2E044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F908730526C4772300B2E044 /* VehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModel.swift; sourceTree = "<group>"; };
+		F908730826C4778400B2E044 /* VehiclesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesRepository.swift; sourceTree = "<group>"; };
+		F908730A26C477B500B2E044 /* RepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFactory.swift; sourceTree = "<group>"; };
+		F908730D26C4780B00B2E044 /* KrakenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenContainer.swift; sourceTree = "<group>"; };
+		F908730F26C4784F00B2E044 /* VehicleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleList.swift; sourceTree = "<group>"; };
+		F908731126C4786C00B2E044 /* VehicleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRow.swift; sourceTree = "<group>"; };
+		F908731326C4788000B2E044 /* KrakenStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenStatus.swift; sourceTree = "<group>"; };
+		F908731526C4789900B2E044 /* VehicleStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleStatusBadge.swift; sourceTree = "<group>"; };
+		F908731726C478B800B2E044 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		F908731B26C4790C00B2E044 /* SampleColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleColors.swift; sourceTree = "<group>"; };
+		F908731D26C4795100B2E044 /* SampleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTheme.swift; sourceTree = "<group>"; };
+		F908732026C4797400B2E044 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F908732226C4798A00B2E044 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		F908732426C479A600B2E044 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F908730326C476F000B2E044 /* KrakenCommon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +125,11 @@
 		F90872D526C476B700B2E044 /* KrakenSample */ = {
 			isa = PBXGroup;
 			children = (
+				F908731A26C478F600B2E044 /* Theme */,
+				F908731926C478DB00B2E044 /* Views */,
+				F908730C26C477EC00B2E044 /* UI Components */,
+				F908730726C4776900B2E044 /* Repository */,
 				F90872D626C476B700B2E044 /* KrakenSampleApp.swift */,
-				F90872D826C476B700B2E044 /* ContentView.swift */,
 				F90872DA26C476B900B2E044 /* Assets.xcassets */,
 				F90872DF26C476B900B2E044 /* Info.plist */,
 				F90872DC26C476B900B2E044 /* Preview Content */,
@@ -130,6 +163,65 @@
 			path = KrakenSampleUITests;
 			sourceTree = "<group>";
 		};
+		F908730426C4770900B2E044 /* Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				F90872D826C476B700B2E044 /* VehiclesView.swift */,
+				F908730526C4772300B2E044 /* VehiclesViewModel.swift */,
+			);
+			path = Vehicles;
+			sourceTree = "<group>";
+		};
+		F908730726C4776900B2E044 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F908730826C4778400B2E044 /* VehiclesRepository.swift */,
+				F908730A26C477B500B2E044 /* RepositoryFactory.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F908730C26C477EC00B2E044 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				F908730D26C4780B00B2E044 /* KrakenContainer.swift */,
+				F908730F26C4784F00B2E044 /* VehicleList.swift */,
+				F908731126C4786C00B2E044 /* VehicleRow.swift */,
+				F908731326C4788000B2E044 /* KrakenStatus.swift */,
+				F908731526C4789900B2E044 /* VehicleStatusBadge.swift */,
+				F908731726C478B800B2E044 /* Spinner.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		F908731926C478DB00B2E044 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F908730426C4770900B2E044 /* Vehicles */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F908731A26C478F600B2E044 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F908731F26C4796900B2E044 /* Standard */,
+				F908731B26C4790C00B2E044 /* SampleColors.swift */,
+				F908731D26C4795100B2E044 /* SampleTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		F908731F26C4796900B2E044 /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				F908732026C4797400B2E044 /* Colors.swift */,
+				F908732226C4798A00B2E044 /* Layout.swift */,
+				F908732426C479A600B2E044 /* Typography.swift */,
+			);
+			path = Standard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +238,9 @@
 			dependencies = (
 			);
 			name = KrakenSample;
+			packageProductDependencies = (
+				F908730226C476F000B2E044 /* KrakenCommon */,
+			);
 			productName = KrakenSample;
 			productReference = F90872D326C476B700B2E044 /* KrakenSample.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +312,9 @@
 				Base,
 			);
 			mainGroup = F90872CA26C476B700B2E044;
+			packageReferences = (
+				F908730126C476F000B2E044 /* XCRemoteSwiftPackageReference "KrakenCommon" */,
+			);
 			productRefGroup = F90872D426C476B700B2E044 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +357,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F90872D926C476B700B2E044 /* ContentView.swift in Sources */,
+				F908731826C478B800B2E044 /* Spinner.swift in Sources */,
+				F908731C26C4790C00B2E044 /* SampleColors.swift in Sources */,
+				F908732526C479A600B2E044 /* Typography.swift in Sources */,
+				F90872D926C476B700B2E044 /* VehiclesView.swift in Sources */,
+				F908732126C4797400B2E044 /* Colors.swift in Sources */,
+				F908731026C4784F00B2E044 /* VehicleList.swift in Sources */,
+				F908730B26C477B500B2E044 /* RepositoryFactory.swift in Sources */,
+				F908731226C4786C00B2E044 /* VehicleRow.swift in Sources */,
 				F90872D726C476B700B2E044 /* KrakenSampleApp.swift in Sources */,
+				F908730E26C4780B00B2E044 /* KrakenContainer.swift in Sources */,
+				F908731626C4789900B2E044 /* VehicleStatusBadge.swift in Sources */,
+				F908730926C4778400B2E044 /* VehiclesRepository.swift in Sources */,
+				F908731E26C4795100B2E044 /* SampleTheme.swift in Sources */,
+				F908731426C4788000B2E044 /* KrakenStatus.swift in Sources */,
+				F908732326C4798A00B2E044 /* Layout.swift in Sources */,
+				F908730626C4772300B2E044 /* VehiclesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +686,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F908730126C476F000B2E044 /* XCRemoteSwiftPackageReference "KrakenCommon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/atomorbit/KrakenCommon.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F908730226C476F000B2E044 /* KrakenCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F908730126C476F000B2E044 /* XCRemoteSwiftPackageReference "KrakenCommon" */;
+			productName = KrakenCommon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F90872CB26C476B700B2E044 /* Project object */;
 }

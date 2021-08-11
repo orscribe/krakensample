@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import KrakenCommon
 
 @main
 struct KrakenSampleApp: App {
+    
+    @StateObject var sampleApp: KrakenApp = KrakenApp(theme: SampleTheme())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VehiclesView()
+                .environmentObject(sampleApp)
         }
     }
 }
