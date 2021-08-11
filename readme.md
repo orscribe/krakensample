@@ -1,5 +1,5 @@
-# KrakenCommon
-Common Dependencies for the Kraken Framework.
+# Kraken
+Sample application to showcase the Kraken Framework. In progress...
 
 Kraken is an attempt to create a reactive, easy to use, and robust universal boilerplate for iOS application scaffolding and development.
 

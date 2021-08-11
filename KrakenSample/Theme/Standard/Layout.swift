@@ -1,5 +1,5 @@
 //
-//  LAyout.swift
+//  Layout.swift
 //  KrakenSample
 //
 //  Created by wesley Mitchell on 8/11/21.
