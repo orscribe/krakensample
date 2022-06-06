@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import KrakenCommon
+import KrakenCox
 
 protocol VehiclesWebRepository: WebRepository {
     func loadVehicles() -> AnyPublisher<[Vehicle], Error>

@@ -8,6 +8,7 @@
 import SwiftUI
 import Combine
 import KrakenCommon
+import KrakenCox
 
 struct VehiclesView: View {
     

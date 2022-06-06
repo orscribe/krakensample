@@ -39,6 +39,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>aeskey</key>
+	<string>YiszqgXlGK9sVLyI3OMf4x1YQNNmrUAX</string>
+	<key>aesiv</key>
+	<string>AqqhF6de4Y2ItrUn</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

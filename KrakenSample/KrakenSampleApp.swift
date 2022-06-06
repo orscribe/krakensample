@@ -7,16 +7,35 @@
 
 import SwiftUI
 import KrakenCommon
+import KrakenCorp
 
 @main
 struct KrakenSampleApp: App {
     
-    @StateObject var sampleApp: KrakenApp = KrakenApp(theme: SampleTheme())
+    @StateObject var sampleDI = DependencyFactory.DependencyContainer
     
     var body: some Scene {
         WindowGroup {
-            VehiclesView()
-                .environmentObject(sampleApp)
+            AuthenticationSwitchView(
+                viewModel: AuthenticationSwitchViewModel(auth: sampleDI.Authentication))
+                .environmentObject(sampleDI)
         }
+    }
+}
+
+extension KrakenSampleApp {
+    struct DependencyFactory {
+        static public var DependencyContainer: KrakenApp = { () -> KrakenApp in
+            let persistence = StandardPersistence()
+            let auth = FakeAuthentication(persistence: persistence)
+            let config = SampleConfiguration(persistence: persistence)
+            let network = SampleNetwork(auth: auth, config: config)
+            let theme = SampleTheme()
+            
+            return KrakenApp(persistence: persistence,
+                             auth: auth,
+                             config: config,
+                             network: network,
+                             theme: theme )}()
     }
 }

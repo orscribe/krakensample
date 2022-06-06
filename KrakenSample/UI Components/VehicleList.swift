@@ -7,6 +7,7 @@
 
 import SwiftUI
 import KrakenCommon
+import KrakenCox
 
 public struct VehicleList: View {
     

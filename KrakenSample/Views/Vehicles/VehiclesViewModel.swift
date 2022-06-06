@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import KrakenCommon
+import KrakenCox
 
 extension VehiclesView {
     class VehiclesViewModel : ObservableObject {
