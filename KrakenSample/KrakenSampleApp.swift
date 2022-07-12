@@ -25,7 +25,8 @@ struct KrakenSampleApp: App {
 
 extension KrakenSampleApp {
     struct DependencyFactory {
-        static public var DependencyContainer: KrakenApp = { () -> KrakenApp in
+        static public var DependencyContainer: KrakenApp = { () -> KrakenApp in            
+            
             let persistence = StandardPersistence()
             let auth = FakeAuthentication(persistence: persistence)
             let config = SampleConfiguration(persistence: persistence)

@@ -12,13 +12,8 @@
 		F90872DE26C476B900B2E044 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90872DD26C476B900B2E044 /* Preview Assets.xcassets */; };
 		F90872E926C476B900B2E044 /* KrakenSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90872E826C476B900B2E044 /* KrakenSampleTests.swift */; };
 		F90872F426C476B900B2E044 /* KrakenSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90872F326C476B900B2E044 /* KrakenSampleUITests.swift */; };
-		F910EFB1280094E9008AFCA9 /* NODIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910EFB0280094E9008AFCA9 /* NODIView.swift */; };
-		F910EFB32800971C008AFCA9 /* AbstractAuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910EFB22800971C008AFCA9 /* AbstractAuthenticationProtocol.swift */; };
-		F910EFB528009740008AFCA9 /* AuthenticationFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910EFB428009740008AFCA9 /* AuthenticationFactoryProtocol.swift */; };
-		F910EFB8280097FD008AFCA9 /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910EFB7280097FD008AFCA9 /* UserProtocol.swift */; };
-		F910EFBA280098A6008AFCA9 /* SimpleCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910EFB9280098A6008AFCA9 /* SimpleCacheProtocol.swift */; };
-		F910EFBE28009911008AFCA9 /* DIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910EFBD28009911008AFCA9 /* DIView.swift */; };
-		F9BF3986284E85DA0055958C /* KrakenCorp in Frameworks */ = {isa = PBXBuildFile; productRef = F9BF3985284E85DA0055958C /* KrakenCorp */; };
+		F9BF39B228510BE30055958C /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = F9BF39B128510BE30055958C /* config.json */; };
+		F9EA519B287DD78D00BBC78F /* KrakenCorp in Frameworks */ = {isa = PBXBuildFile; productRef = F9EA519A287DD78D00BBC78F /* KrakenCorp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +45,7 @@
 		F90872EF26C476B900B2E044 /* KrakenSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrakenSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90872F326C476B900B2E044 /* KrakenSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenSampleUITests.swift; sourceTree = "<group>"; };
 		F90872F526C476B900B2E044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F910EFB0280094E9008AFCA9 /* NODIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NODIView.swift; sourceTree = "<group>"; };
-		F910EFB22800971C008AFCA9 /* AbstractAuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAuthenticationProtocol.swift; sourceTree = "<group>"; };
-		F910EFB428009740008AFCA9 /* AuthenticationFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFactoryProtocol.swift; sourceTree = "<group>"; };
-		F910EFB7280097FD008AFCA9 /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
-		F910EFB9280098A6008AFCA9 /* SimpleCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCacheProtocol.swift; sourceTree = "<group>"; };
-		F910EFBD28009911008AFCA9 /* DIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIView.swift; sourceTree = "<group>"; };
+		F9BF39B128510BE30055958C /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9BF3986284E85DA0055958C /* KrakenCorp in Frameworks */,
+				F9EA519B287DD78D00BBC78F /* KrakenCorp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,10 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				F90872D626C476B700B2E044 /* KrakenSampleApp.swift */,
-				F910EFAE28008C54008AFCA9 /* DI Examples */,
 				F90872DA26C476B900B2E044 /* Assets.xcassets */,
 				F90872DF26C476B900B2E044 /* Info.plist */,
 				F90872DC26C476B900B2E044 /* Preview Content */,
+				F9BF39B128510BE30055958C /* config.json */,
 			);
 			path = KrakenSample;
 			sourceTree = "<group>";
@@ -143,27 +133,6 @@
 			path = KrakenSampleUITests;
 			sourceTree = "<group>";
 		};
-		F910EFAE28008C54008AFCA9 /* DI Examples */ = {
-			isa = PBXGroup;
-			children = (
-				F910EFB628009744008AFCA9 /* Good */,
-				F910EFB0280094E9008AFCA9 /* NODIView.swift */,
-			);
-			path = "DI Examples";
-			sourceTree = "<group>";
-		};
-		F910EFB628009744008AFCA9 /* Good */ = {
-			isa = PBXGroup;
-			children = (
-				F910EFB22800971C008AFCA9 /* AbstractAuthenticationProtocol.swift */,
-				F910EFB428009740008AFCA9 /* AuthenticationFactoryProtocol.swift */,
-				F910EFB7280097FD008AFCA9 /* UserProtocol.swift */,
-				F910EFB9280098A6008AFCA9 /* SimpleCacheProtocol.swift */,
-				F910EFBD28009911008AFCA9 /* DIView.swift */,
-			);
-			path = Good;
-			sourceTree = "<group>";
-		};
 		F9412A2227E8F4880014532C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,7 +157,7 @@
 			);
 			name = KrakenSample;
 			packageProductDependencies = (
-				F9BF3985284E85DA0055958C /* KrakenCorp */,
+				F9EA519A287DD78D00BBC78F /* KrakenCorp */,
 			);
 			productName = KrakenSample;
 			productReference = F90872D326C476B700B2E044 /* KrakenSample.app */;
@@ -262,7 +231,7 @@
 			);
 			mainGroup = F90872CA26C476B700B2E044;
 			packageReferences = (
-				F9BF3984284E85DA0055958C /* XCRemoteSwiftPackageReference "KrakenCorp" */,
+				F9EA5199287DD78D00BBC78F /* XCRemoteSwiftPackageReference "KrakenCorp" */,
 			);
 			productRefGroup = F90872D426C476B700B2E044 /* Products */;
 			projectDirPath = "";
@@ -282,6 +251,7 @@
 			files = (
 				F90872DE26C476B900B2E044 /* Preview Assets.xcassets in Resources */,
 				F90872DB26C476B900B2E044 /* Assets.xcassets in Resources */,
+				F9BF39B228510BE30055958C /* config.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F910EFB528009740008AFCA9 /* AuthenticationFactoryProtocol.swift in Sources */,
-				F910EFB1280094E9008AFCA9 /* NODIView.swift in Sources */,
-				F910EFB32800971C008AFCA9 /* AbstractAuthenticationProtocol.swift in Sources */,
-				F910EFB8280097FD008AFCA9 /* UserProtocol.swift in Sources */,
-				F910EFBA280098A6008AFCA9 /* SimpleCacheProtocol.swift in Sources */,
-				F910EFBE28009911008AFCA9 /* DIView.swift in Sources */,
 				F90872D726C476B700B2E044 /* KrakenSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,7 +592,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F9BF3984284E85DA0055958C /* XCRemoteSwiftPackageReference "KrakenCorp" */ = {
+		F9EA5199287DD78D00BBC78F /* XCRemoteSwiftPackageReference "KrakenCorp" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:BuddyTV/KrakenCorp.git";
 			requirement = {
@@ -639,9 +603,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F9BF3985284E85DA0055958C /* KrakenCorp */ = {
+		F9EA519A287DD78D00BBC78F /* KrakenCorp */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F9BF3984284E85DA0055958C /* XCRemoteSwiftPackageReference "KrakenCorp" */;
+			package = F9EA5199287DD78D00BBC78F /* XCRemoteSwiftPackageReference "KrakenCorp" */;
 			productName = KrakenCorp;
 		};
 /* End XCSwiftPackageProductDependency section */
